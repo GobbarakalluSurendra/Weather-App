@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌤 Real-Time Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="app">
+    <h1>🌤 Real-Time Weather Dashboard</h1>
+    <button id="darkModeToggle" style="margin-bottom: 20px;">🌙 Dark Mode</button>
+
+    <div class="search-bar">
+      <input type="text" id="cityInput" placeholder="Enter city name..." />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="weatherInfo" class="weather-card"></div>
+    <canvas id="weatherChart" width="300" height="200"></canvas>
+    <div id="forecast" class="weather-card" style="margin-top:20px;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
